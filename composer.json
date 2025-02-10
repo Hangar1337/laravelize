@@ -1,5 +1,5 @@
 {
-    "name": "tomasvotruba/laravelize",
+    "name": "hangar1337/laravelize",
     "license": "MIT",
     "description": "Rector rules and utils to convert Symfony project to Laravel",
     "bin": [
