@@ -107,11 +107,11 @@ final class SymfonyRouteAttributesToLaravelRouteFileRector extends AbstractRecto
             }
         }
 
-        $routeTarget = $this->resolveRouteTaret($classMethod);
+        $routeTarget = $this->resolveRouteTarget($classMethod);
         return new RouteMetadata($routePath, $routeTarget, $routeName, $routeRequirements);
     }
 
-    private function resolveRouteTaret(ClassMethod $classMethod): string
+    private function resolveRouteTarget(ClassMethod $classMethod): string
     {
         if ($this->isName($classMethod, '__invoke')) {
             // class is the target :)
